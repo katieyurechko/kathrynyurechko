@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kathryn Yurechko</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Lato';
+}
+  
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #D8BFD8;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  background-color: #D8BFD8;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Left-aligned link */
+.navbar a.left {
+  float: left;
+}
+
+/* Change color on hover */
+.navbar a.left:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 40%; /* IE10 */
+  flex: 40%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 60%; /* IE10 */
+  flex: 60%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+footer {
+    padding: 10px 20px;
+    background-color: #D8BFD8;
+    color: white;
+    font-family: Lato, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 12;
+}
+  
+</style>
+</head>
+<body>
+  
+<div class="navbar">
+  <a href="index.html">Kathryn Yurechko</a>
+  <a href="index.html" class="left">About</a>
+  <a href="research.html" class="left">Research</a>
+  <a href="writing.html" class="left">Writing</a>
+  <a href="https://www.google.com" class="right"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
+  <a href="mailto: yurechkok24@mail.wlu.edu" class="right"><i style="font-size:24px" class="fa">&#xf0e0;</i></a>
+  <a href="./abcf32x.pdf" class="right" download="How-to-download-file.pdf"><img src="CV.png" width="15" height="20"></a>
+</div>
+  
+<div class="row">
+  <div class="side">
+    <h2 style="font-size: 25;">Publications</h2>
+  </div>
+  <div class="main">
+    <h3 style="font-size: 20;">Publication #1</h3>
+    <p>Description</p>
+    <p><em>Venue</em></p>
+    <p></p>
+    <a href="https://google.com" class="left">PDF</a>
+  </div>
+</div>
+
+<footer>
+    <p>This site was built by &copy; Kathryn Yurechko, <a href="https://github.com/amyxzhang/personal_website">GitHub code here</a>.</p>
+</footer>
+
+</body>
+</html>
 
