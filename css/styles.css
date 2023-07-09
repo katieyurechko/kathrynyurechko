@@ -12,6 +12,12 @@
    width: 100% !important;
    height: auto !important;
    margin-bottom:5px; /* to match column gap */
+   filter: grayscale(100%);
+   transition: filter 2s;
+}
+
+#gallery img:hover {
+   filter:none;
 }
 
 @media (max-width: 1200px) {
@@ -37,13 +43,5 @@
     column-count:         1;
    }
 }
-
-filter: grayscale(100%);
-
-#gallery img:hover {
-   filter:none;
-}
-
-transition: filter 2s;
 
 /* Credit to: https://timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html-and-css-fcb973f595ea */
