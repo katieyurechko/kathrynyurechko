@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="https://media.licdn.com/dms/image/D4E03AQF961Cgo3xCTQ/profile-displayphoto-shrink_200_200/0/1677295637294?e=1693440000&v=beta&t=kf9o1VsPJWK3Dd93fUJs7lryE-ID4FY_cSIfQOf87Zw">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Kathryn Yurechko</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+/* Style the body */
+body {
+  font-family: 'Lato';
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 40%; /* IE10 */
+  flex: 40%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 60%; /* IE10 */
+  flex: 60%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+footer {
+    padding: 10px 20px;
+    background-color: #D8BFD8;
+    color: white;
+    font-family: Lato, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 12;
+}
+  
+</style>
+</head>
+<body>
+  
+<div class="row">
+  <div class="side">
+    <h3>Title</h3>
+    <h5>Date</h5>
+  </div>
+  <div class="main">
+    <p>Text</p>
+  </div>
+</div>
+
+<footer>
+    <p>This site was built by &copy; Kathryn Yurechko, <a href="https://github.com/amyxzhang/personal_website">GitHub code here</a>.</p>
+</footer>
+
+</body>
+</html>
