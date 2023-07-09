@@ -57,8 +57,13 @@ body {
   float: right;
 }
 
+/* Left-aligned link */
+.navbar a.left {
+  float: left;
+}
+
 /* Change color on hover */
-.navbar a:hover {
+.navbar a.left:hover {
   background-color: #ddd;
   color: black;
 }
@@ -113,9 +118,9 @@ body {
   
 <div class="navbar">
   <a href="index.html">Kathryn Yurechko</a>
-  <a href="index.html">About</a>
-  <a href="research.html">Research</a>
-  <a href="#">Writing</a>
+  <a href="index.html" class="left">About</a>
+  <a href="research.html" class="left">Research</a>
+  <a href="#" class="left">Writing</a>
   <a href="./abcf32x.pdf" class="right" download="How-to-download-file.pdf">
     <button class="button button1">Download my CV</button>
 </a>
